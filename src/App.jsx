@@ -8,9 +8,6 @@ import Event from './pages/event';
 import College from './pages/college';
 import CreateEvent from './pages/create-event';
 import NotFound from './pages/404';
-import SignInLayout from './layouts/signInLayout';
-import SignLayout from './layouts/signUpLayout';
-import CreateEventLayout from './layouts/createEventLayout';
 
 
 function App() {
@@ -18,7 +15,6 @@ function App() {
 
 
     {
-      path: "/",
       element: <RootLayout />,
       children: [
         {
@@ -52,55 +48,19 @@ function App() {
 
 
     {
-      path: "/",
-      element: <SignInLayout />,
-      children: [
-        
-          
-        {
-          index: true,
-          path: "/sign-in",
-          element:<SignIn/>
-        },
-
-      ]
-
-
+      path: "/sign-in",
+      element: <SignIn />,
     },
 
     {
-      path: "/",
-      element: <SignLayout />,
-      children: [
-        
-          
-        {
-          index: true,
-          path: "/sign-UP",
-          element:<SignUp/>
-        },
-
-      ]
-
-
+      path: "/sign-up",
+      element: <SignUp />,
     },
 
 
     {
-      path: "/",
-      element: <CreateEventLayout />,
-      children: [
-        
-          
-        {
-          index: true,
-          path: "/create-event",
-          element:<CreateEvent/>
-        },
-
-      ]
-
-
+      path: "/create-event",
+      element: <CreateEvent />,
     },
 
 
