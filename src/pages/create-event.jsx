@@ -1,8 +1,14 @@
 import React from 'react'
+import Navbar from '../components/navbar'
 
 const CreateEvent= () => {
   return (
-    <div>Create-event</div>
+    <div>
+      <Navbar />
+      <div>
+        CreateEventForm
+      </div>
+      </div>
   )
 }
 
